@@ -1,4 +1,7 @@
 async function run() {
+    // const ipfsClient = require('ipfs-http-client');
+    // const ipfs = ipfsClient.create('https://ipfs.infura.io:5001');
+
     const { create } = await import('ipfs-http-client');
     const ipfs = await create();
     
@@ -6,7 +9,7 @@ async function run() {
     const metadata = {
         path: '/',
         content: JSON.stringify({
-            name: "My First NFT",
+            name: "Scoolj First NFT",
             attributes: [
             {
                 "trait_type": "Peace",
@@ -22,8 +25,8 @@ async function run() {
             }
             ],
             // update the IPFS CID to be your image CID
-            image: "https://ipfs.io/ipfs/QmQ2wnwaFJ1w42UTywTWpM8RgiqrWwKFR6AMrpyiHPgi3p",
-            description: "So much PLW3!"
+            image: "https://ipfs.io/ipfs/QmcvFqU5iaayGCpjf9sx9oJkdbCGWiNW2mUq8UcEBT2E93",
+            description: "Scoolj pix !"
         })
     };
 
